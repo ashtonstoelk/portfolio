@@ -3783,7 +3783,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   padding: 0 2rem 0 0;
   position: relative;
   width: calc(100% - 4rem);
-  max-width: 72rem;
+  max-width: 1200px;
   z-index: 2;
 }
 
@@ -3947,7 +3947,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   position: relative;
   margin: 0 auto;
   width: calc(100% - 4rem);
-  max-width: 72rem;
+  max-width: 1200px;
   z-index: 2;
 }
 
@@ -4170,7 +4170,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   position: relative;
   margin: 0 auto;
   width: calc(100% - 4rem);
-  max-width: 72rem;
+  max-width: 1200px;
   z-index: 2;
 }
 

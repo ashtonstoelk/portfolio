@@ -54,26 +54,28 @@
         display: grid;
         grid-template-columns: minmax(0, 1fr) 400px minmax(0, 1fr);
         align-items: center;
-        gap: 32px;
+        gap: 48px;
         width: 100%;
         max-width: 100%;
         margin: 0 auto;
         padding: 40px;
       }
       .profile img {
-        width: 300px;
-        height: auto;
-        float: right;
-        border-radius: 100%;
+        display: block;
       }
       .profile h1 {
-        font-size: 48px;
+        font-size: 40px;
+        line-height: 1.05;
         margin: 0;
       }
       .profile-intro {
         flex: 1 1 0;
-        text-align: left;
+        text-align: center;
         justify-self: end;
+        max-width: 18rem;
+        overflow: visible;
+        transform: translate(-12px, -18px);
+        padding-left: 0;
         padding-right: 20px;
       }
       .about-visual {
@@ -86,9 +88,11 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        justify-content: flex-end;
+        justify-content: center;
+        align-self: center;
         min-width: 0;
         gap: 20px;
+        transform: none;
       }
       .current-role-card {
         display: flex;
@@ -155,11 +159,12 @@
         margin-top: 8px;
       }
       .headshot {
-        width: 400px;
-        height: 500px;
+        width: 360px;
+        height: 450px;
         object-fit: cover;
         object-position: center 18%;
-        border-radius: 46% / 38%;
+        border-radius: 100%;
+        transform: translate(-24px, -18px);
       }
       .current-role-card img {
         width: 58px;
@@ -195,15 +200,20 @@
         }
         .profile-intro {
           text-align: center;
+          max-width: 100%;
+          transform: none;
+          padding-left: 0;
         }
         .headshot {
           width: 320px;
           height: 400px;
+          transform: none;
         }
         .profile-role {
           justify-content: center;
           width: 100%;
           align-items: center;
+          transform: none;
         }
         .current-role-card {
           width: 100%;
