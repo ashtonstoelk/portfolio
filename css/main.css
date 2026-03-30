@@ -207,24 +207,30 @@ body.is-preload *:after {
 /* Type */
 
 html {
-  font-size: 16pt;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1680px) {
   html {
-    font-size: 12pt;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 1280px) {
   html {
-    font-size: 11pt;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 14px;
   }
 }
 
 @media screen and (max-width: 360px) {
   html {
-    font-size: 10pt;
+    font-size: 13px;
   }
 }
 
@@ -3771,19 +3777,22 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  -moz-align-items: stretch;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
   -moz-transition: -moz-transform 1s ease, opacity 1s ease;
   -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
   background: rgba(255, 255, 255, 0.175);
-  height: 4rem;
-  line-height: 4rem;
+  min-height: 4rem;
   margin: -4rem auto 0 auto;
   overflow: hidden;
   padding: 0 2rem 0 0;
   position: relative;
   width: calc(100% - 4rem);
-  max-width: 1200px;
+  max-width: 1400px;
   z-index: 2;
 }
 
@@ -3890,7 +3899,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.links li {
-  display: block;
+  display: flex;
   padding-left: 0;
 }
 
@@ -3899,10 +3908,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  display: block;
-  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.76rem;
   outline: none;
-  padding: 0 2rem;
+  padding: 0.9rem 1.45rem;
+  white-space: nowrap;
 }
 
 #nav ul.links li a:hover {
@@ -3923,6 +3934,14 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #nav ul.icons {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
   -moz-flex-grow: 0;
   -webkit-flex-grow: 0;
   -ms-flex-grow: 0;
@@ -3947,7 +3966,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   position: relative;
   margin: 0 auto;
   width: calc(100% - 4rem);
-  max-width: 1200px;
+  max-width: 1400px;
   z-index: 2;
 }
 
@@ -4170,7 +4189,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   position: relative;
   margin: 0 auto;
   width: calc(100% - 4rem);
-  max-width: 1200px;
+  max-width: 1400px;
   z-index: 2;
 }
 
